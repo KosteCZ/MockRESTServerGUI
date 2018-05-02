@@ -1,4 +1,4 @@
-package cz.koscak.jan.ws.gui;
+package cz.koscak.jan.mockservergui.ws.rest;
 
 import javax.xml.bind.DatatypeConverter;
 
