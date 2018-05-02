@@ -5,7 +5,7 @@
 	<artifactId>MockRestServerGUI</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>MockRestServerGUI</name>
-	<description>Mock REST Server GUI</description>
+	<description>Mock REST Server GUI - Monitoring Tool</description>
 	<dependencies>
 		<dependency>
 			<groupId>org.apache.httpcomponents</groupId>

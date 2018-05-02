@@ -35,7 +35,7 @@ public class GUI {
 	private static final String SELECT_WS_TYPE_WS_RESULT_COUNT = "SELECT '', '', ws_name, ws_result, count(id)";
 	private static final String SELECT_CUSTOM = SELECT_ALL;
 
-	private static final String[] SELECT_NAMES = new String[] { "Custom", "ALL", "WS_NAME count", "WS_NAME + WS_RESULT count" };
+	private static final String[] SELECT_NAMES = new String[] { "Custom =>", "ALL", "WS_NAME count", "WS_NAME + WS_RESULT count" };
 	private static final String[] SELECT_VALUES = new String[] { SELECT_CUSTOM, SELECT_ALL, SELECT_WS_TYPE_COUNT, SELECT_WS_TYPE_WS_RESULT_COUNT };
 
 	//private static final String SQL_SELECT_START = "SELECT id, date, ws_name, ws_result, text FROM message WHERE ";
@@ -94,7 +94,7 @@ public class GUI {
 	}
 
 	private static void createTable(final JFrame frame, final JTextField urlField, final JTextField resultsField, final JTextField selectField,
-			final JTextField sqlField2) {
+			final JTextField sqlWhereField) {
 		
 		final JTable table = Table.createTable(frame);
 
@@ -113,7 +113,7 @@ public class GUI {
 				
 				try {
 					
-					String sqlWherePart = sqlField2.getText();
+					String sqlWherePart = sqlWhereField.getText();
 					
 					if ("".equalsIgnoreCase(sqlWherePart)) {
 						sqlWherePart = "1=1";
@@ -231,6 +231,8 @@ public class GUI {
 		final JComboBox<String> selectList = new JComboBox<String>(selectStrings);
 		
 		selectList.setSelectedIndex(1);
+		
+		selectField.setEditable(false);
 		
 		selectList.addActionListener(new ActionListener() {
 
