@@ -96,16 +96,16 @@ public class Table {
 		TableColumnModel colModel = table.getColumnModel();
 		colModel.getColumn(0).setPreferredWidth(30);
 		colModel.getColumn(0).setWidth(30);
-		colModel.getColumn(1).setPreferredWidth(25);
-		colModel.getColumn(1).setWidth(25);
+		colModel.getColumn(1).setPreferredWidth(40);
+		colModel.getColumn(1).setWidth(40);
 		colModel.getColumn(2).setPreferredWidth(135);
 		colModel.getColumn(2).setWidth(135);
 		colModel.getColumn(3).setPreferredWidth(75);
 		colModel.getColumn(3).setWidth(75);
 		colModel.getColumn(4).setPreferredWidth(75);
 		colModel.getColumn(4).setWidth(75);
-		colModel.getColumn(5).setPreferredWidth(720);
-		colModel.getColumn(5).setWidth(720);
+		colModel.getColumn(5).setPreferredWidth(705);
+		colModel.getColumn(5).setWidth(705);
 
 	}
 
